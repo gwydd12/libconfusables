@@ -1,6 +1,10 @@
 #ifndef LIBCONFUSABLES_H
 #define LIBCONFUSABLES_H
 
+int utf8_char_len(const char *str);
+const char* find_replacement(const char *utf8_char);
+char* replace_confusables(const char *input);
+
 typedef struct {
     char* alphanumeric;
     char* confusable;
