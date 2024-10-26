@@ -16,9 +16,8 @@ char *result = replace_confusables(test_str);
 if (result) {
     printf("Original: %s\n", test_str);
     printf("Processed: %s\n", result);
-    free(result);
 } else {
-    printf("Memory allocation failed.\n");
+    printf("Something failed.\n");
 }
 
 return 0;
