@@ -1,5 +1,5 @@
-#ifndef CONFUSED_H
-#define CONFUSED_H
+#ifndef LIBCONFUSABLES_H
+#define LIBCONFUSABLES_H
 
 typedef struct {
     char* alphanumeric;
@@ -91,4 +91,4 @@ ConfusableMapping confusable[] = {
     {"z", "𝑍𝒁𝒵𝓩𝖹𝙕𝚉𝚭𝛧𝜡𝝛𝞕ᵶꮓ𝐳𝑧𝒛𝓏𝔃𝔷𝕫𝖟𝗓𝘇𝘻𝙯𝚣ⓩｚźẑżžẓẕƶȥɀᴢጊʐⱬᶎʑᙆ"}
 };
 
-#endif // CONFUSED_H
+#endif // LIBCONFUSABLES_H

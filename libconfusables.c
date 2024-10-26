@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <locale.h>
-#include "confused.h"
+#include "libconfusables.h"
 
 #define NUM_CONFUSABLES (sizeof(confusable) / sizeof(confusable[0]))
 
