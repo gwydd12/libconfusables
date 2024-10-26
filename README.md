@@ -4,7 +4,7 @@
   <br>
 </h1>
 
-<h4 align="center">A small C library to handle unicode confusables.</h4>
+<h4 align="center">A small C library to remove unicode confusables.</h4>
 
 
 ## How To Use
