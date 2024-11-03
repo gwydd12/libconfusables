@@ -26,6 +26,7 @@ return 0;
 ## Alternatives
 
 - https://github.com/gc/confusables
+- https://github.com/null8626/decancer.git
 
 ## License
 
