@@ -39,7 +39,6 @@ int utf8_char_len(const char *str) {
  */
 const char* find_replacement(const char *utf8_char) {
     for (size_t j = 0; j < NUM_CONFUSABLES; j++) {
-        // Loop through each character in confusable[j].confusable to match UTF-8 characters
         const char *conf_char = confusable[j].confusable;
         while (*conf_char) {
             int char_len = utf8_char_len(conf_char);
@@ -66,7 +65,7 @@ char* replace_confusables(const char *input) {
     char *output = malloc(output_size);
     if (!output) return NULL;
 
-    size_t out_idx = 0;
+    size_t out_id = 0;
     const char *p = input;
     
     while (*p) {
@@ -75,16 +74,16 @@ char* replace_confusables(const char *input) {
 
         if (replacement) {
             size_t repl_len = strlen(replacement);
-            strcpy(&output[out_idx], replacement);
-            out_idx += repl_len;
+            strcpy(&output[out_id], replacement);
+            out_id += repl_len;
         } else {
-            strncpy(&output[out_idx], p, char_len);
-            out_idx += char_len;
+            strncpy(&output[out_id], p, char_len);
+            out_id += char_len;
         }
         p += char_len;
     }
 
-    output[out_idx] = '\0';
+    output[out_id] = '\0';
     return output;
 }
 

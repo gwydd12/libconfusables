@@ -23,6 +23,10 @@ if (result) {
 return 0;
 ```
 
+## Alternatives
+
+- https://github.com/gc/confusables
+
 ## License
 
 * The library itself underlies the MIT LICENSE.
